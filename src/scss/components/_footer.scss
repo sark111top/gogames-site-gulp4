@@ -1,0 +1,93 @@
+.footer{
+  background-color: var(--bg-color);
+  padding: 25px 0;
+  border-top: 1.5px solid rgb(129, 111, 140, 0.5);
+  &__container{
+    @include mobile{
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__top{
+    gap: 20px;
+    @include mobile{
+      justify-content: space-between;
+      width: 100%;
+      border-top: 1px solid rgba(129, 111, 140, 0.5);
+      margin-top: 20px;
+      padding-top: 20px;
+    }
+  }
+  &__logo{
+    max-width: 238px;
+    max-height: 65px;
+    @include small-tablet{
+      max-width: 200px;
+    }
+    @include mobile{
+      display: none;
+    }
+    &--mobile{
+      display: none;
+      @include mobile{
+        display: block;
+      }
+    }
+  }
+  &__copyrights{
+    color: var(--descr-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0%;
+    margin: 0;
+    @include small-tablet{
+      font-size: 14px;
+    }
+    @include mobile{
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &__socials{
+    gap: 19px;
+    @include mobile{
+      gap: 30px;
+    }
+    @include small-mobile{
+      gap: 15px;
+    }
+  }
+  &__social{
+    border-radius: 20px;
+    box-shadow: -1px -1px 8px 0px rgba(255, 255, 255, 0.08);
+    background: rgb(252, 216, 203);
+    @include small-mobile{
+      background-color: transparent;
+      padding: 0;
+      max-width: none;
+    }
+    &--facebook{
+      padding: 10px 14.5px;
+      @include tablet{
+        padding: 15px 19.5px;
+      }
+      @include small-tablet{
+        padding: 15px 18.5px;
+      }
+    }
+    &--twitter{
+      padding: 11.5px 10px;
+      @include tablet{
+        padding: 16.5px 15px;
+      }
+    }
+    &--instagram{
+      padding: 10px 11.5px;
+      @include tablet{
+        padding: 15px 16.5px;
+      }
+    }
+  }
+}

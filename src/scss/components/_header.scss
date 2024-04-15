@@ -1,0 +1,70 @@
+.header{
+  position: absolute;
+  top: auto;
+  min-width: 1167px;
+  width: 100%;
+
+  @include tablet{
+    min-width: 0;
+    padding-top: 10px;
+  }
+
+  &__container{
+    @include mobile{
+      flex-direction: column;
+    }
+  }
+  &__logo-container{
+    @include mobile{
+      width: 100%;
+      border-bottom: 2px solid rgba(129, 111, 140, 0.5);
+      display: flex;
+      justify-content: center;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+    }
+
+  }
+  &__logo{
+    @include small-tablet{
+      width: 200px;
+    }
+  }
+  &__list{
+    gap: 45px;
+    @include small-tablet{
+      gap: 30px;
+    }
+    @include small-mobile{
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+    }
+  }
+  &__item{
+    @include small-mobile{
+      grid-column: 3 span;
+      &:last-child{
+        display: flex;
+        justify-content: center;
+        grid-column: 12 span;
+      }
+    }
+  }
+  &__link{
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    @include small-mobile{
+      white-space: nowrap;
+    }
+  }
+  &__btn{
+    padding: 16px 23px;
+    @include small-mobile{
+      width: 75%;
+      margin: 0 auto;
+    }
+  }
+}

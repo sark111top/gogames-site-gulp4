@@ -1,0 +1,173 @@
+.xboxps{
+  background-image: url(../img/xboxps-bg.png);
+  background-color: rgb(255, 217, 195);
+  background-repeat: no-repeat;
+  padding: 113px 0 150px;
+  @include mobile{
+    padding-bottom: 52px;
+  }
+  @include small-mobile{
+    padding-top: 52px;
+  }
+  &__container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &__subtitle{
+    margin: 0 0 30px;
+    @include small-tablet{
+      margin-bottom: 10px;
+    }
+  }
+  &__title{
+    margin: 0 0 25px;
+    @include small-tablet{
+      font-size: 45px;
+    }
+    @include mobile{
+      line-height: 60px;
+    }
+    @include small-mobile{
+      font-size: 38px;
+    }
+  }
+  &__descr{
+    margin: 0 0 29px;
+    max-width: 518px;
+    @include small-tablet{
+      font-size: 16px;
+    }
+  }
+  &__flower_left{
+    top: -20px;
+    left: 55px;
+    @include tablet{
+      left: 15px;
+    }
+    @include mobile{
+      width: 150px;
+      left: -15px;
+      top: 25px;
+    }
+    @include small-mobile{
+      display: none;
+    }
+  }
+  &__cloud{
+    top: 25px;
+    left: 50px;
+    z-index: 1;
+    @include tablet{
+      left: 10px;
+    }
+    @include mobile{
+      top: 90px;
+    }
+    @include small-mobile{
+      display: none;
+    }
+  }
+  &__flower_right{
+    top: 40px;
+    left: 380px;
+    @include tablet{
+      left: 340px;
+    }
+    @include small-tablet{
+      left: 180px;
+    }
+    @include mobile{
+      left: 150px;
+      width: 150px;
+    }
+    @include small-mobile{
+      display: none;
+    }
+  }
+  &__gamepad{
+    top: 182px;
+    left: 27px;
+    z-index: 2;
+    animation: 3s linear infinite flying;
+    @include tablet{
+      left: -13px;
+    }
+    @include small-mobile{
+      left: 2px;
+    }
+  }
+  &__man1{
+    top: 80px;
+    left: 50px;
+    z-index: 5;
+    animation: 3s linear infinite flying;
+    @include tablet{
+      left: 10px;
+    }
+    @include mobile{
+      left: -15px;
+    }
+    @include small-mobile{
+      left: 0;
+    }
+  }
+  &__man2{
+    top: 270px;
+    left: 435px;
+    z-index: 5;
+    @include tablet{
+      left: 395px;
+    }
+    @include small-tablet{
+      left: 270px;
+      top: 250px;
+    }
+    @include mobile{
+      left: 200px;
+      width: 90px;
+    }
+    @include small-mobile{
+      display: none;
+    }
+  }
+  &__mecha1{
+    top: -13px;
+    left: 325px;
+    z-index: 3;
+    animation: 6.5s linear infinite reverse rotating;
+    @include tablet{
+      left: 275px;
+    }
+    @include small-tablet{
+      left: 250px;
+    }
+    @include mobile{
+      left: 190px;
+      top: 20px;
+      width: 70px;
+    }
+    @include small-mobile{
+      display: none;
+    }
+  }
+  &__mecha2{
+    top: 90px;
+    left: 265px;
+    max-width: 80px;
+    max-height: 83px;
+    z-index: 3;
+    animation: 6.5s linear infinite reverse rotating;
+    @include tablet{
+      left: 225px;
+    }
+    @include small-tablet{
+      left: 200px;
+    }
+    @include mobile{
+      left: 160px;
+      width: 50px;
+    }
+    @include small-mobile{
+      display: none;
+    }
+  }
+}

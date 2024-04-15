@@ -1,0 +1,121 @@
+.vr{
+  padding: 90px 0;
+  padding-bottom: 250px;
+  background-color: var(--bg-color);
+  @include tablet{
+    padding-bottom: 200px;
+  }
+  @include mobile{
+    padding-bottom: 90px;
+  }
+  &__container{
+    grid-template-columns: repeat(2, 1fr);
+    @include tablet{
+      grid-template-columns: repeat(12, 1fr);
+    }
+  }
+  &__images{
+    @include tablet{
+      grid-column: 4 span;
+    }
+  }
+  &__screen{
+    top: 10px;
+    left: 230px;
+    zoom: .87;
+    animation: 3.3s linear infinite flying;
+    @include small-tablet{
+      width: 200px;
+      left: 130px;
+    }
+    @include mobile{
+      width: 160px;
+      left: 85px;
+    }
+    @include small-mobile{
+      left: 40px;
+    }
+  }
+  &__men{
+    top: 180px;
+    left: 45px;
+    z-index: 100;
+    @include small-tablet{
+      width: 130px;
+      left: 0;
+    }
+    @include mobile{
+      width: 100px;
+    }
+  }
+  &__shadow{
+    left: -75px;
+    @include tablet{
+      left: 120px;
+      top: 220px;
+    }
+    @include small-tablet{
+      left: 40px;
+    }
+  }
+  &__men-shadow{
+    top: 385px;
+    left: 55px;
+    @include small-tablet{
+      left: 10px;
+      top: 315px;
+    }
+    @include mobile{
+      top: 280px;
+    }
+    @include small-mobile{
+      display: none;
+    }
+  }
+  &__content{
+    @include tablet{
+      grid-column: 7 / 12 span;
+    }
+    @include small-tablet{
+      grid-column: 6 / 12 span;
+    }
+    @include mobile{
+      grid-column: 7 / 12 span;
+    }
+  }
+  &__subtitle{
+    color: var(--text-color);
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    margin: 0 0 30px;
+    @include small-tablet{
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+  }
+  &__title{
+    min-width: 586px;
+    margin: 0 0 25px;
+    @include small-tablet{
+      font-size: 45px;
+    }
+    @include mobile{
+      min-width: 0;
+      line-height: 60px;
+    }
+    @include small-mobile{
+      font-size: 38px;
+    }
+  }
+  &__descr{
+    margin: 0 0 29px;
+    @include small-tablet{
+      font-size: 16px;
+    }
+  }
+  &__btn{
+    padding: 13px 30px;
+  }
+}

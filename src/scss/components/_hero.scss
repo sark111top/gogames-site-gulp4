@@ -1,0 +1,215 @@
+.hero{
+  padding: 45px 0;
+  background-image: url(../img/hero-bg.png);
+  background-size: 1640px;
+  background-position: -200px -20px;
+  background-color: rgb(255, 217, 195);
+  background-repeat: no-repeat;
+  padding-top: 237px;
+  @include tablet{
+    padding-bottom: 0;
+  }
+  @include mobile{
+    padding-top: 175px;
+    padding-bottom: 80px;
+  }
+  @include small-mobile{
+    padding-top: 230px;
+  }
+  &__content{
+    max-width: 518px;
+    &:after{
+      display: block;
+      position: absolute;
+      bottom: 35px;
+      right: 160px;
+      content: url(../img/hero-cross.png);
+      animation: 10s linear infinite rotating;
+      @include small-tablet{
+        bottom: 10px;
+      }
+      @include mobile{
+        bottom: 0;
+        right: -125px;
+      }
+      @include small-mobile{
+        display: none;
+      }
+    }
+    @include small-mobile{
+      max-width: none;
+    }
+  }
+  &__text{
+    color: var(--text-color);
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    margin: 0 0 26px;
+  }
+  &__title{
+    margin: 0 0 8px;
+    @include small-tablet{
+      font-size: 60px;
+    }
+    @include small-mobile{
+      line-height: 65px;
+    }
+  }
+  &__subtitle{
+    font-weight: 700;
+    font-size: 58px;
+    letter-spacing: 0%;
+    margin: 0 0 31px;
+    color: var(--text-color);
+    @include small-tablet{
+      font-size: 50px;
+    }
+    @include small-mobile{
+      font-size: 44px;
+    }
+  }
+  &__descr{
+    margin: 0 0 36px;
+    @include small-tablet{
+      font-size: 17px;
+      max-width: 660px;
+    }
+    @include mobile{
+      margin-bottom: 20px;
+    }
+  }
+  &__btn{
+    padding: 16px 37px;
+  }
+  &__images{
+    width: 600px;
+    height: 600px;
+    @include small-mobile{
+      height: 20px;
+      display: none;
+    }
+  }
+  &__card1{
+    top: -115px;
+    border-radius: 10%;
+    box-shadow: 0px 10px 20px 0px rgba(235, 131, 130, 0.4);
+    opacity: 0.8;
+    @include tablet{
+      left: -90px;
+    }
+    @include mobile{
+      top: 25px;
+      width: 150px;
+    }
+    @include small-mobile{
+      display: none;
+    }
+  }
+  &__circle_left{
+    top: 45px;
+    left: 120px;
+    @include tablet{
+      top: -55px;
+      left: 20px;
+    }
+    @include mobile{
+      top: 95px;
+      left: -15px;
+    }
+    @include small-mobile{
+      display: none;
+    }
+  }
+  &__circle_middle{
+    top: 45px;
+    left: 150px;
+    z-index: 2;
+    @include tablet{
+      top: -55px;
+      left: 40px;
+    }
+    @include mobile{
+      top: 95px;
+      left: 5px;
+    }
+    @include small-mobile{
+      top: 20px;
+      left: auto;
+    }
+  }
+  &__circle_right{
+    top: 45px;
+    left: 180px;
+    @include tablet{
+      top: -55px;
+      left: 60px;
+    }
+    @include mobile{
+      top: 95px;
+      left: 25px;
+    }
+    @include small-mobile{
+      display: none;
+    }
+  }
+  &__lines{
+    top: -45px;
+    left: 170px;
+    animation: 2.5s linear spawnside;
+    z-index: 2;
+    @include tablet{
+      left: 50px;
+    }
+    @include mobile{
+      left: 0;
+      top: 105px;
+    }
+    @include small-mobile{
+      top: 35px;
+      left: 10px;
+    }
+  }
+  &__gamer{
+    top: -75px;
+    left: 80px;
+    animation: 1s linear spawnbottom;
+    z-index: 3;
+    @include tablet{
+      left: 10px;
+    }
+    @include mobile{
+      top: 75px;
+      left: -25px;
+    }
+    @include small-mobile{
+      top: 20px;
+      left: auto;
+    }
+  }
+  &__card2{
+    top: 490px;
+    left: 550px;
+    @include tablet{
+      top: 430px;
+      left: 260px;
+
+    }
+    @include small-tablet{
+      top: 330px;
+      left: 155px;
+    }
+    @include mobile{
+      width: 150px;
+      top: 370px;
+      left: 110px;
+    }
+    @include small-mobile{
+      display: none;
+    }
+    border-radius: 10%;
+    box-shadow: 0px 10px 20px 0px rgba(235, 131, 130, 0.4);
+    opacity: 0.8;
+  }
+}
